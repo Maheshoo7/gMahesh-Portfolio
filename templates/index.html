@@ -1,0 +1,406 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Mahesh Gaddhe</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+
+
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <nav id="mainNavbar" class="navbar navbar-expand-md navbar-light">
+    <a class="hexagon" href="#"><i class="fas fa-braille"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav ">
+        <a class="nav-item nav-link" href="#section1">About</a>
+        <a class="nav-item nav-link" onclick="smoothScroll(document.getElementById('scroll'))" href="#section2">Skills</a>
+        <a class="nav-item nav-link" href="#section3">Projects</a>
+        <a class="nav-item nav-link" href="#section4">Contact</a>
+        <a id="resume" class="nav-item nav-link" href="https://drive.google.com/file/d/1O1yy4zkO-wtYX9uqOVEkGl9gbJA43KDu/view?usp=sharing" target="_blank"><i class="fas fa-file-alt fa-sm"></i> Resume</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <header>
+    <div class="view jarallax" data-jarallax='{"speed": 0.2}'>
+      <div class="mask d-flex justify-content-center align-items-center">
+        <div class="container px-5">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="greet">Hi, I am</p>
+              <p class="name">Mahesh Gaddhe</p>
+              <p class="quote">Aspiring Software Developer and contemplative coder, <br> inspired by tough problems.</p>
+              <!-- <p class="gallery"> <span>G</span>all<span></span>er<span>y</span></p>
+              <p class="insp"> <span>F</span>ind <span>Y</span>our <span>I</span>nspiration</p> -->
+              <a href="#section3" class="btn" role="button">My Projects</a>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="icon-bar d-none d-lg-block">
+    <a href="https://github.com/Maheshoo7" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/mahesh-g-ba2244194/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.hackerrank.com/gmahes00" target="_blank"><i class="fab fa-hackerrank"></i></a>
+    <a href="https://medium.com/@maheshg_32550" target="_blank"><i class="fab fa-medium"></i></a>
+    <a href="https://www.facebook.com/gadde.mahesh.1/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <div class="line"></div>
+  </div>
+
+  <div class="mail">
+    <a href="mailto:gmahes00@gmail.com">
+      <p style="transform: rotate(90deg);">Gmahes00@gmail.com</p>
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="section1" class="line"></div>
+  </div>
+
+  <div class="container mb-5 pb-5 pl-lg-5">
+    <p class="heading mb-4">About Me</p>
+    <div class="row align-items-center">
+      <div style="font-weight: 400; text-align:justify;" class="col-md-5 text-muted">
+        <br>
+        <p>Hello! I'm Mahesh, a software developer based in Bangalore, India.</p>
+        <p>A few interesting things about me. I first found my passion towards programming in 2018, Since then i have
+          started learning to code. I love learning. Every day I push myself to learn something new, whether that be
+          about software engineering or miscellaneous facts about the universe.</p>
+        <p>I have completed my <span style="color: #2887C8;">Bachelor of Engineering</span> in Electronics and
+          Communication stream at Bangalore. I had planned to go abroad for higher education but the COVID-19 and other
+          financial problems has made me change my plans. Currently i am searching for a software developer positions.
+        </p>
+      </div>
+
+      <div class="profile col-md-7 text-center">
+        <img style="width: 400px; border-radius:3px;" src="{% static 'img/profile.jpg' %}" alt="" class="img-fluid mt-5 mt-md-0">
+        <p class="square d-none d-md-block"></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="section2" class="container my-5 py-5 px-4 px-lg-5">
+    <p class="heading text-right mb-5">Skills Expertise</p>
+    <p style="letter-spacing: 1px;" class="text-muted text-right font-small py-2 my-5">1 - Basic
+      &nbsp;&nbsp;&nbsp;&nbsp; 2 - Novice &nbsp;&nbsp;&nbsp;&nbsp; 3 - Intermediate &nbsp;&nbsp;&nbsp;&nbsp; 4 -
+      Advanced &nbsp;&nbsp;&nbsp;&nbsp; 5 - Expert</p>
+    <div class="row mb-5">
+      <div class="col-md-4">
+        <p class="skills text-muted my-2">Python - 5</p>
+        <div class="holder">
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p class="skills text-muted my-2">Database (SQL) - 5</p>
+        <div class="holder ">
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p class="skills text-muted my-2">Data Structures & Algorithms - 5</p>
+        <div class="holder">
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-md-4">
+        <p class="skills text-muted my-2">Linux - 4</p>
+        <div class="holder">
+          <div style="width: 80%;" class="bar"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p class="skills text-muted my-2">Django - 4</p>
+        <div class="holder">
+          <div style="width: 80%;" class="bar"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p class="skills text-muted my-2">Rest API - 4</p>
+        <div class="holder">
+          <div style="width: 80%;" class="bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <p class="skills text-muted my-2">JavaScript - 3</p>
+        <div class="holder">
+          <div style="width: 60%;" class="bar"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p class="skills text-muted my-2">Html / Css / Bootstrap - 5</p>
+        <div class="holder">
+          <div style="width: 100%;" class="bar"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p class="skills text-muted my-2">React Js - 2</p>
+        <div class="holder">
+          <div style="width: 40%;" class="bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="section3" class="container py-5 my-5">
+    <div class="container px-0 px-lg-5">
+      <p class="heading mb-2 my-5 pt-5"><i style="color: #4484CE;" class="fas fa-archieve"></i> Projects</p>
+      <div class="row px-3">
+        <div class="col-md-4 pb-2 px-1">
+          <div class="card mx-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="card-title"><i class="fas fa-folder-open" aria-hidden="true"></i></h1>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                  <a href="https://github.com/Maheshoo7/Django-ecommerce-site" target="_blank">
+                  <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <hr>
+              <h5 class="card-title">E-commerce Website</h5>
+              <p class="card-text">An E-commerce app that is designed to sell clothes, Features include User Authentication, Cart, Payment method Using Stripe Api.</p>
+              <br>
+              <p style="font-size:0.8rem; letter-spacing:1px; font-weight:100;" class="card-text">Django &nbsp;
+                Postgresql &nbsp; Bootstrap &nbsp; Stripe API</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-2 px-1">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="card-title"><i class="fas fa-folder-open" aria-hidden="true"></i></h1>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                  <a href="https://github.com/Maheshoo7/btre_project" target="_blank">
+                  <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <hr>
+              <h5 class="card-title">Real Estate Website</h5>
+              <p class="card-text">A Website That focuses on Buying and selling of houses, Where people can login and buy or sell their house by uploading the details.</p>
+              <br>
+              <p style="font-size:0.8rem; letter-spacing:1px; font-weight:100;" class="card-text">Django &nbsp;
+                Postgresql &nbsp; Bootstrap</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-2 px-1">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="card-title"><i class="fas fa-folder-open" aria-hidden="true"></i></h1>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                  <a href="https://github.com/Maheshoo7/activityPeriodApi" target="_blank">
+                  <i class="fa fa-github" aria-label="code" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <hr>
+              <h5 class="card-title">User Activity Api</h5>
+              <p class="card-text">A Rest API that gives the user details and their login login activity period, Used django nested serializer to build.</p>
+              <br>
+              <p style="font-size:0.8rem; letter-spacing:1px; font-weight:100;" class="card-text">Django Rest Framework&nbsp;
+                Postgresql</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row px-3">
+        <div class="col-md-4 pb-2 px-1">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="card-title"><i class="fas fa-folder-open" aria-hidden="true"></i></h1>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                  <a href="https://github.com/Maheshoo7/Nest-interiors" target="_blank">
+                  <i class="fa fa-github" aria-label="code" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <hr>
+              <h5 class="card-title">Interiors Website</h5>
+              <p class="card-text">A Site Built for a friend who is an Interior designer, The UI has been designed from scratch using Bootstrap and css</p>
+              <br>
+              <p style="font-size:0.8rem; letter-spacing:1px; font-weight:100;" class="card-text">Html/css &nbsp; Bootstrap &nbsp;
+                Postgresql &nbsp; Django</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-2 px-1">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="card-title"><i class="fas fa-folder-open" aria-hidden="true"></i></h1>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                  <a href="https://github.com/Maheshoo7/Django-react-todo" target="_blank">
+                  <i class="fa fa-github" aria-label="code" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <hr>
+              <h5 class="card-title">Django-React app</h5>
+              <p class="card-text">A CRUD webapp that is built using React for frontend and backend using Django Rest Framework.</p>
+              <br>
+              <p style="font-size:0.8rem; letter-spacing:1px; font-weight:100;" class="card-text">React Js &nbsp; Django Rest Framework</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 px-1">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="card-title"><i class="fas fa-folder-open" aria-hidden="true"></i></h1>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                  <a href="" target="_blank">
+                  <!-- <i class="fa fa-github" aria-label="code" aria-hidden="true"></i> -->
+                  </a>
+                </div>
+              </div>
+              <hr>
+              <h5 class="card-title">Voice Recognition - ML</h5>
+              <p class="card-text">An Academic Project built in my final year of engineering using Machine learning algorithms such as MFCC and SVM.</p>
+              <br>
+              <p style="font-size:0.8rem; letter-spacing:1px; font-weight:100;" class="card-text">Machine Learning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="section4" class="container">
+    <div class="container pt-3 pb-5 my-5 px-0 px-lg-5">
+      <p class="heading mb-2 my-5 pt-5">Contact Me</p>
+      <div class="container text-center py-5 z-depth-1">
+        <p style="color:#525252;" class="font-weight-bold mb-5">Reach Me Anytime <i style="color: #4484CE ;"
+            class="fas fa-reply"></i></p>
+        <div class="cont-info">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="tel:+91-9741647894">
+                <i style="color: #4484CE;" class="fas fa-phone fa-2x"></i>
+              </a>
+              <p>Phone Number</p>
+              <a href="tel:+91-9741647894">+91 9741647894</a>
+            </div>
+            <div class="col-md-4 mt-5 mt-md-0">
+              <i style="color: #4484CE;" class="fas fa-map-marker-alt fa-2x"></i>
+              <p>Address</p>
+              <a href="#">Bangalore, 560062, India.</a>
+            </div>
+            <div class="col-md-4 mt-5 mt-md-0">
+              <a href="mailto:maheshg9741@gmail.com">
+                <i style="color: #4484CE;" class="fas fa-envelope fa-2x"></i>
+              </a>
+              <p>E-mail</p>
+              <a href="mailto:maheshg9741@gmail.com">maheshg9741@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="end my-5 py-3">
+    <pre style="color:#4484CE;"
+      class="text-center"><i class="fas fa-heart" aria-hidden="true"></i>  <i class="fa fa-heart" aria-hidden="true"></i>  <i class="fa fa-heart" aria-hidden="true"></i></pre>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-foot font-small">
+    <div class="container">
+        <div class="icon-list text-center d-block d-lg-none">
+            <a href="https://github.com/Maheshoo7" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mahesh-g-ba2244194/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.hackerrank.com/gmahes00" target="_blank"><i class="fab fa-hackerrank"></i></a>
+            <a href="https://medium.com/@maheshg_32550" target="_blank"><i class="fab fa-medium"></i></a>
+            <a href="https://www.facebook.com/gadde.mahesh.1/" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+      <hr>
+      <div class="footer-copyright text-center py-3">
+        <a href="https://github.com/Maheshoo7/gMahesh-Portfolio" target="_blank">Built by Mahesh Gaddhe
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://kit.fontawesome.com/a280566867.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
+</body>
+
+</html>
